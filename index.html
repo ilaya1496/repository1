@@ -1,0 +1,106 @@
+<html>
+<head>
+   <link rel="stylesheet" href="BudjetTrack.css">
+   
+   <!-- jQuery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- jQuery UI library -->
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <script src="budjetScript.js"></script>
+   
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">   <!-- provides style to the datepicker -->
+  <link rel="stylesheet" href="/resources/demos/style.css">  <!-- provides style to the datepicker -->
+
+   <script>
+   $( function() {
+    $( "#date" ).datepicker();
+   });
+  </script>
+  
+</head>
+<body>
+   
+      <table align="center" style="margin-top:100px">
+	      <tr>
+		     <td>Date:</td>
+			 <td>
+			       <input type="text" id="date" class="inputs" type="text" name="rDate" >				   
+			 </td>
+			 <td>
+			      <button id="clearDate" class="clear">
+			 </td>
+		  </tr>
+	      <tr>
+		     <td>Description:</td>
+			 <td>
+			       <input id="description" class="inputs" type="text" name="rDescription" >				   
+			 </td>
+			 <td>
+			      <button id="clearDescription" class="clear">
+			 </td>
+		  </tr>
+		  <tr>
+		     <td>Category:</td>
+			 <td>
+			       <input id="category" class="inputs" type="text" name="rCategory" >				   
+			 </td>
+			 <td>
+			      <button id="clearCategory" class="clear">
+			 </td>
+		  </tr>
+		  <tr>
+		     <td>Account:</td>
+			 <td>
+			       <input id="account" class="inputs" type="text" name="rAccount" >				   
+			 </td>
+			 <td>
+			      <button id="clearAccount" class="clear">
+			 </td>
+		  </tr>
+		  <tr>
+		     <td>TransAccount:</td>
+			 <td>
+			       <input id="transAccount" class="inputs" type="text" name="rTransAccount" >				   
+			 </td>
+			 <td>
+			      <button id="clearTransAccount" class="clear">
+			 </td>
+		  </tr>
+		  <tr>
+		     <td>Amount:</td>
+			 <td>
+			       <input id="amount" class="inputs" type="text" name="rAmount" >				   
+			 </td>
+			 <td>
+			      <button id="clearAmount" class="clear">
+			 </td>
+		  </tr>
+			 <td><input id="reset" type="button" value="RESET"></td>
+		     <td><input id="submit" type="button" value="SUBMIT"></td>
+		  <tr>
+		  </tr>
+	  </table>
+	  
+	  <div id="myModal" class="modal">
+
+           <div class="modal-content">
+                  <span id="close" class="close">&times;</span>
+                  <p>Enter the Password to submit....</p>
+	
+                  <div style="display:block;width: 400px;height: 30px;">
+	                  <div style="float:left"><input id="password" type="password" focus="true"></div>
+	                  <div style="float:left"><button id="clearPassword" class="clear"></div>
+	                  <div style="float:left;margin-left: 40px;"><input id="check" type="checkbox" ></div>
+	                  <div style="float:left;margin-top: -15;"><p >Show Password</p></div>
+	              </div>
+	              <div style="position: relative;display:block;width: 400px;height: 50px;">
+	                  <div style="position: absolute;top:10px;left:2px;display:inline-block;width:35px;height:23px"><input id="ok" type="button" value="OK" ></div>
+	                  <div style="position: absolute;top:10px;left:50px;display:inline-block;width:70px;height:30px"><input class="close" type="button" value="CLOSE"></div>
+	              </div>
+           </div>
+      </div>
+
+</body>
+</html>
